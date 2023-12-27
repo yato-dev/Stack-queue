@@ -11,6 +11,17 @@ public class Stack {
         stackList.addFirst(data);
     }
 
+    public int peek() {
+        return stackList.isEmpty() ? -1 : stackList.getFirst();
+    }
+
+    public void pop() {
+        if (!stackList.isEmpty()) {
+            stackList.removeFirst();
+        } else {
+            System.out.println("Stack is empty");
+        }
+    }
     public void display() {
         System.out.println(stackList);
     }

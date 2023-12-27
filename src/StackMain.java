@@ -7,6 +7,12 @@ public class StackMain {
         stack.push(56);
 
       
-        stack.display();
+        while (stack.peek() != -1) {
+            System.out.println("Peek: " + stack.peek());
+            stack.pop();
+            System.out.println("After Pop:");
+            stack.display();
+        }
+
     }
 }
